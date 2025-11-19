@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>paleoclimatologia Página con subpáginas</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFF8DC; /* tono más claro y limpio */
+  color: #4a3b2a; /* café elegante para el texto */
+}
+.sidebar {
+  height: 100vh;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #DEB887; /* beige/café suave profesional */
+  padding-top: 20px;
+}
+.sidebar a {
+  display: block;
+  color: #4a3b2a;
+  padding: 15px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.sidebar a:hover, .sidebar a.active {
+  background-color: #CDAA7D; /* tono café medio para hover */
+}
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  min-height: 100vh;
+}
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #FFE4C4; /* beige suave */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: #4a3b2a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+section {
+  display: none;
+  background-color: #FFFAF0; /* fondo claro profesional */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+section.active {
+  display: block;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+a.red-link {
+  color: #8B4513; /* café profesional */
+  text-decoration: underline;
+}
+h3 {
+  margin-top: 20px;
+  color: #8B4513;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" onclick="showSection('inicio')">Inicio</a>
+  <a onclick="showSection('informatica')">informatica</a>
+  <a onclick="showSection('matematicas')">matematicas</a>
+  <a onclick="showSection('ed.ambiental')">educacion ambiental</a>
+  <a onclick="showSection('ed.fisica')">eduacion fisica</a>
+  <a onclick="showSection('ingles')">ingles</a>
+  <a onclick="showSection('español')">español</a>
+  <a onclick="showSection('ciencias')">ciencias</a>
+  <a onclick="showSection('integrantes')">integrantes</a>    
+</div>
+
+<div class="content">
+  <header>
+    <h1>Paleoclimatología</h1>
+  </header>
+
+<section id="inicio" class="active">
+  <h2>Inicio</h2>
+  <p>BIENVENIDO A ESTA PAGINA SOBRE LA PALEOCLIMATOLOGIA
+
+La paleoclimatologia es la ciencia que estudia el clima de la Tierra en el pasado, mucho antes de que existieran los registros meteorologicos modernos. Su objetivo es entender como ha cambiado el clima a lo largo de millones de años usando evidencias indirectas, como los anillos de los arboles, los sedimentos de los lagos, el hielo de los glaciares, y los fosiles.
+Este conocimiento ayuda a comprender mejor los procesos naturales que influyen en el clima y a prever como podria cambiar en el futuro. </p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0IxUV_6SqwmtO63Mf1ZEIJ19AiZ5RzxPusg&s" alt="dinosaurio">
+</section>
+
+<section id="informatica">
+  <h2>Asignatura de Informática</h2>
+  <p>En esta asignatura trabajamos en la creacion de la pagina web en la que estamos presentando todos nuestros trabajos.
+  Utilizamos y organizamos los trabajos realizados en las demas asignaturas para integrarlos en un proyecto comun.
+  </p>
+  <img src="WhatsApp Image 2025-11-09 at 2.22.45 PM.jpeg" alt="Vista de la pagina principal del proyecto de Paleoclimatologia">
+</section>
+
+<section id="matematicas">
+  <h2>Asignatura de Matemáticas</h2>
+  <p>En esta asignatura nos enfocamos el proyecto STEM que hablamos de la huella de carbono (CO2) y en cómo afecta negativamente nuestro clima. Vimos datos de años anteriores y cómo nos fue afectando y cómo en un futuro podrá afectarnos de manera negativa, tocando así el tema de la paleontología.</p>
+  <img src="https://img.freepik.com/vector-gratis/ilustracion-co2-diseno-plano-dibujado-mano_23-2149391636.jpg?semt=ais_hybrid&w=740&q=80" alt="CO2">
+  <img src="https://sis.cnf.gob.mx/wp-content/uploads/2017/09/diagrama-CO2-1024x781.png" alt="CO2">
+</section>
+
+<section id="ed.ambiental">
+  <h2>Asignatura de Educación Ambiental</h2>
+  <h3>Muestras de hielo</h3>
+  <p>Hablaremos del hielo, en el cual pudimos observar diferentes particulas y ver sus distintas capas.</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6SZazYuhaAnMioefAzpd-WDw15T-utdQ7IQ&s" alt="Ejemplo de muestra de hielo">
+
+  <h3>Muestras de polen</h3>
+  <p>Hablaremos del polen, que pudimos observar gracias al microscopio, viendo distintas formas y colores.</p>
+  <img src="https://preview.redd.it/3c3lewuj7u341.jpg?width=1080&crop=smart&auto=webp&s=4807cdf963b47d828993e82431ee1193b011d625" alt="Ejemplo de polen al microscopio">
+  <h3>Muestras de agua de charco</h3>
+  <p>Finalmente, observamos bajo el microscopio una muestra de agua de charco, donde pudimos ver particulas que parecian restos de materia organica o desechos de animales.</p>
+  <img src="https://i.ytimg.com/vi/fUt3pBM5A8E/maxresdefault.jpg" alt="Ejemplo de polen al microscopio">
+
+  <h3>Video del laboratorio</h3>
+  <p>A continuacion podras ver un video donde mostramos parte de nuestro trabajo en el laboratorio:</p>
+  <iframe 
+    src="https://drive.google.com/file/d/18uZuwPWcsLkbiXRrmFu-hS93jtGEI-38/preview" 
+    width="640" 
+    height="480" 
+    allow="autoplay">
+</iframe>
+
+</section>
+<section id="ed.fisica">
+  <h2>Asignatura de Educación Física</h2>
+
+  <p>
+    En la clase de Educación Física realizamos una actividad de simulación donde 
+    representamos tres tipos de ambientes: el desierto, la jungla y el monte. 
+    Cada grupo debía adaptarse a las condiciones de cada entorno.
+  </p>
+
+  <p>
+    Durante la simulación tuvimos que ponernos un tapabocas, llevar una maleta y 
+    cargar platillos para un sistema húmedo, ya que en el monte existen 
+    condiciones más cálidas y húmedas. Esta experiencia nos ayudó a entender 
+    cómo las personas y los animales se adaptan a diferentes ambientes.
+  </p>
+
+  <p>
+    Fue una actividad divertida, educativa y de mucho trabajo en equipo, que 
+    combinó el movimiento físico con la imaginación y el aprendizaje ambiental.
+  </p>
+
+  <h3>Ambientes simulados</h3>
+  <ul>
+    <li><strong>Desierto:</strong> representamos las altas temperaturas y la falta de agua.</li>
+<img src="https://uecluster.blob.core.windows.net/images/planetainteligente/1588506305_desiertos1400.jpg" alt="Ejemplo del desierto">
+    <li><strong>Jungla:</strong> simulamos un ambiente lleno de vegetación y humedad.</li>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Y_B93MWz7H2iD4UDozj5ZYLeqT5lwXQgDA&s" alt="Ejemplo de jungla">
+    <li><strong>Monte:</strong> practicamos en un entorno con vegetación media y un sistema húmedo usando los platillos.</li>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReNTjwdNmJUDMGdiiP4-2PfhqjDOl38Z5FIQ&s" alt="Ejemplo de  monte">
+  </ul>
+</section>
+<section id="ingles">
+  <h2>English Subject</h2>
+  <p>Here you will find the material worked on Paleoclimatology in English, including the Comic Strip, the Digital Glossary, and the Timeline.</p>
+
+  <h3>Comic Strip</h3>
+  <p>Comic Strip: Paleoclimatology - A Journey Through Time</p>
+  <img src="comic-strip.jpeg" 
+     alt="Comic Strip: Paleoclimatology - A Journey Through Time" 
+     style="width: 100%; max-width: 700px; display: block; margin: auto;">
+
+  <h3>Digital Glossary</h3>
+  <iframe src="digital-glossary.pdf"></iframe>
+
+  <h3>Timeline</h3>
+  <iframe src="timeline-ingles.pdf"></iframe>
+</section>
+
+<section id="español">
+  <h2>Asignatura de español</h2>
+  <p>En esta asignatura escribimos un cuento sobre la Paleoclimatología.
+A continuación, van a ver una pequeña presentación en PowerPoint de nuestro cuento, en donde lo resumimos.</p>
+  <Presentación del cuento en PowerPoint (Google Slides) -->
+<iframe 
+    src="https://docs.google.com/presentation/d/1eKcZbzZewEMtbNsAl8dDNdpfNwKKlJAV/embed?start=true&loop=true&delayms=3000" 
+    frameborder="0"
+    allowfullscreen="true"
+    mozallowfullscreen="true"
+    webkitallowfullscreen="true"
+    style="width:100%; height:480px; border-radius:10px;">
+  </iframe>
+</section>
+
+<section id="ciencias">
+  <h2>Asignatura de ciencias</h2>
+  <p>En esta asignatura trabajamos en el cambio climatico sin tener un tema de profundidad o uno en concreto pero vimos eso que podriamos sumarlo ya que esto en la paleontologia podria afectar dist intos factores en unos añostenindo encuenta podemos relacinarlo con eso.</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSCm5za92NF2ZwUDsGdrz8QcYyAmCvn0vW9Q&s" alt="cambio climatico">
+  <img src="https://www.worldanimalprotection.es/cdn-cgi/image/width=800,format=auto,fit=cover/siteassets/images/calentamiento-global-cambio-climatico/" alt="cambio climatico">
+</section>
+ <section id="integrantes">   <h2>Integrantes del Proyecto</h2>   <p>Este proyecto fue realizado por los  estudiantes:</p>    <ul>     <li>Stefany Vargas</li>     <li>Daniel Orjuela</li>     <li>Mariana Lozano</li>     <li>Karol Velásquez</li>   </ul> </section>
+<p>Espero alla sido de su agrado, gracias por su atencion </p>
+<script>
+function showSection(id) {
+  document.querySelectorAll('section').forEach(section => {
+    section.classList.remove('active');
+  });
+  document.getElementById(id).classList.add('active');
+
+  document.querySelectorAll('.sidebar a').forEach(link => {
+    link.classList.remove('active');
+    if (link.textContent.toLowerCase().includes(id)) {
+      link.classList.add('active');
+    }
+  });
+}
+</script>
+
+</body>
+</html>
